@@ -1,0 +1,46 @@
+#include<iostream>
+
+using namespace std;
+
+bool check(int x, int y, int z)
+{
+    int a = max( x , max(y,z));
+    int b,c;
+    if(a==x)
+    {
+        b=y;
+        c=z;
+    }
+   else if(a==y)
+   {
+       b=x;
+       c=z;
+   }
+   else
+   {
+       b=y;
+       c=z;
+   }
+
+    if( a*a= b*b + c*c )
+       return true
+    else
+       return false
+}
+int main()
+{
+    int x,y,z;
+    cout<<"enter three numbers: ";
+    cin>>x>>y>>z;
+
+    if(check)
+    {
+        cout<<"the given three numbers are pythagorean triplet ";
+    }
+    else
+    {
+        cout<<"the given three numbers are not pythagorean triplet ";
+    }
+
+    return 0;
+}
